@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <style type="text/css">
+            .container-img{
+                position: relative;
+                width: 300px;
+            }
+            .image{
+                display: block;
+                width: 300px;
+                height: 400px;
+                transition: 1s;
+            }
+            .overlay{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                opacity: 0;
+                transition: 1s;
+                background-color: rgb(34, 35, 34);
+            }
+            .container-img:hover .overlay{
+                opacity: 1;
+            }
+            .container-img:hover .image{
+                transform:rotate(360deg);
+
+            }
+            .text{
+                color: aliceblue;
+                font-size: 20px;
+                position: absolute;
+                top:50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Image Overlay Effect</h2>
+        <div class="container-img">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Spiderman.JPG" alt="Demo Image" class="image">
+        <div class="overlay">
+          <div class="text">is spider man is spider man
+        </div>
+        </div>
+        </div>
+        <div class="container-img">
+            <img src="https://i.pinimg.com/474x/5e/8c/cf/5e8ccf3db56deb865236158c6f30f4f3.jpg" alt="Demo image" class="image">
+            <div class="overlay">
+                <div class="text"> thor the god of thunder
+
+        </div>
+    </body>
+</html>

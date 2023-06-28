@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Hover Element - Selector OR Child Combinator</title>
+    <style type="text/css">
+        #MainUL li ul li{display: none;}
+      
+        #MainUL li :hover ul li{display: block;}
+        #MainUL li :hover ul li ul li{display: none;}
+        #MainUL li ul li:hover ul li{display: block;}
+        #MainUL li ul li:hover ul li ul li{display: none;}
+        #MainUL li ul li ul li:hover ul li{display: block;}
+
+
+    </style>
+</head>
+<body>
+    <div >
+        <ul>
+            <li>Google</li>
+            <ul><li>Gmail</li>
+                 <ul><li>Sign Up</li></ul>
+                 <ul><li>Sign In</li></ul>
+              
+                </ul>
+            <ul><li>Youtube</li></ul>
+            <ul><li>GDrive</li></ul>
+            <ul><li>GMap</li></ul>
+            <li>Facebook</li>
+
+            <li>Microsoft</li>
+              <ul><li>Bing</li></ul>
+              <ul><li>Linked In</li></ul>
+            <li>MSN</li>
+            <li>Amazon</li>
+             <ul><li>AWS</li></ul>
+             <ul><li>Ecommerce</li></ul>
+             <ul><li>A-ML</li></ul>
+
+
+          </ul>
+          
+           
+               
+    </div>
+    
+</body>
+</html>
